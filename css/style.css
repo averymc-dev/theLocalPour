@@ -74,9 +74,6 @@ h1 {
   text-shadow: 2px 2px 5px #000;
 }
 
-nav {
-}
-
 nav ul {
   list-style: none;
   display: flex;
@@ -143,9 +140,7 @@ h2 {
 
 p {
   font-size: 1.5em;
-  margin-bottom: 30px;
-  font-family: 'Itim';
-  color: #fff;
+  font-family: 'Itim', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .btn {
@@ -168,16 +163,15 @@ p {
 
 .story .container, .drinks .container {
   display: flex;
-  justify-content: space-between;
 }
 
-.drinks .container div {
-  display: flex;
-  flex-direction: column;
+.story .container .img, .story .container .text {
+  width: 50%;
 }
 
-.story .container p {
+.container p {
   color: #000;
+  line-height: 32px;
 }
 
 .story img {
@@ -243,23 +237,28 @@ h3 {
 
 .story h3 {
   color:#DD1C1A;
+  line-height: 57px;
 }
 
 .drinks h3 {
   color: #07a0c3;
+  line-height: 57px;
 }
 
-.drinks p {
-  color: #000;
+.drinks .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 25px;
 }
 
-.img {
-  padding-top:100px;
-}
-
-.text {
-  padding: 50px 25px;
-  margin: 100px 25px;
+.story .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 25px;
 }
 
 .hero-img img{
@@ -267,6 +266,11 @@ h3 {
 	height:100%;
 	object-fit: cover;
 	overflow: hidden;
+}
+
+.hero p {
+  color: #fff;
+  margin-bottom: 30px;
 }
 
 /*Media Queries*/
